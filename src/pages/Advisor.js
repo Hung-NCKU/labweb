@@ -30,13 +30,18 @@ const Advisor = () => {
       </nav>
 
       <div className="content">
-        <h1>Advisor</h1>
-        <p>指導教授資訊將顯示於此。</p>
+        <h1>Sun-Yuan Hsieh</h1>
         <img
           src="/assets/img/hsieh.jpg"
           alt="Advisor Photo"
           className="advisor-img"
         />
+        <p><strong class="highlight">Sun-Yuan Hsieh</strong> received the PhD degree in 
+        computer science from <strong class="highlight">National Taiwan University</strong>, Taipei, Taiwan, in June 1998. He then served the compulsory two-year military service. From August 2000 to January 2002, he was an assistant professor at the Department of Computer Science and Information Engineering, <strong class="highlight">National Chi Nan University</strong>. In February 2002, he joined the Department of Computer Science and Information Engineering, National <strong class="highlight">Cheng Kung University</strong>, and now he is a chair professor. He received the 2007 K. T. Lee Research Award, President's Citation Award (American Biographical Institute) in 2007, the Engineering Professor Award of Chinese Institute of Engineers (Kaohsiung Branch) in 2008, National Science Council’s Outstanding Research Award in 2009, IEEE Outstanding Technical Achievement Award (IEEE Tainan Section) in 2011, Outstanding Electronic Engineering Professor Award of Chinese Institute of Electrical Engineers in 2013, and Outstanding Engineering Professor Award of Chinese Institute of Engineers in 2014. He is Fellow of the British Computer Society (BCS) and Fellow of Institution of Engineering and Technology (IET).<br /><br />
+
+Dr. Hsieh is also an experienced editor with editorial services to a number of journals, including serving as associate editors of IEEE ACCESS, IEEE Transactions on Reliability, Theoretical Computer Science (Elsevier), Discrete Applied Mathematics (Elsevier), Journal of Supercomputing (Springer), International Journal of Computer Mathematics (Taylor & Francis Group), Parallel Processing Letters (World Scientific), Discrete Mathematics, Algorithms and Applications (World Scientific), Fundamental Informaticae (Polish Mathematical Society), and Journal of Interconnection Networks (World Scientific). In addition, he has served on organization committee and/or program committee of several dozens international conferences in computer science and computer engineering. His current research interests include design and analysis of algorithms, fault-tolerant computing, bioinformatics, parallel and distributed computing, and algorithmic graph theory. 
+
+Dr. Hsieh is also an experienced editor with editorial services to a number of journals, including serving as associate editors of IEEE ACCESS, IEEE Transactions on Reliability, Theoretical Computer Science (Elsevier), Discrete Applied Mathematics (Elsevier), Journal of Supercomputing (Springer), International Journal of Computer Mathematics (Taylor & Francis Group), Parallel Processing Letters (World Scientific), Discrete Mathematics, Algorithms and Applications (World Scientific), Fundamental Informaticae (Polish Mathematical Society), and Journal of Interconnection Networks (World Scientific). In addition, he has served on organization committee and/or program committee of several dozens international conferences in computer science and computer engineering. His current research interests include design and analysis of algorithms, fault-tolerant computing, bioinformatics, parallel and distributed computing, and algorithmic graph theory. </p>
       </div>
 
       <footer className="footer">
