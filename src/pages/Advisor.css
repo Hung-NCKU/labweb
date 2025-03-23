@@ -1,0 +1,73 @@
+/* Advisor.css */
+.nav {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ccc;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+  }
+  
+  .nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nav-logo img {
+    height: 60px;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: #343434;
+    font-weight: bold;
+  }
+  
+  .nav-links a:hover {
+    color: #208e95;
+  }
+  
+  .content {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 120px 20px 40px;
+    text-align: center;
+  }
+  
+  .advisor-img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  
+  .footer {
+    background-color: #343434;
+    color: white;
+    padding: 30px 20px;
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+  .footer-columns {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
