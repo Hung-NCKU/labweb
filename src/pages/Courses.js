@@ -1,14 +1,14 @@
 import React, { useEffect, useState } from 'react';
+import { useNavigate } from 'react-router-dom'; // ⬅️ 加這個
 import './Courses.css';
 
 const Courses = () => {
   const [studentId, setStudentId] = useState('');
   const [idList, setIdList] = useState([]);
+  const navigate = useNavigate(); // ⬅️ 使用 navigate
 
   useEffect(() => {
     document.title = 'Courses - INHPC';
-
-    // 載入 ID.txt 中的學生 ID 清單（需事先將檔案放在 public 資料夾）
     fetch('/ID.txt')
       .then(res => res.text())
       .then(data => {
@@ -17,9 +17,10 @@ const Courses = () => {
       });
   }, []);
 
+
   const handleLogin = () => {
     if (idList.includes(studentId)) {
-      window.location.href = '/courses-page'; // 登入成功後導向頁面
+      navigate('/courses-page'); // ⬅️ 用 navigate 轉跳
     } else {
       alert('Invalid student ID');
     }

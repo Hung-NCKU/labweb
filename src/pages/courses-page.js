@@ -1,60 +1,42 @@
-import React, { useState } from 'react';
-import './CoursesPage.css';
+import React, { useEffect } from 'react';
+import './CoursesPage.css'; // optional 自定義樣式
+
+const courseList = [
+  { year: '2024', term: 'fall', title: 'Graph Theory (圖形理論)' },
+  { year: '2024', term: 'fall', title: 'Discrete Mathematics (離散數學)' },
+  { year: '2024', term: 'spring', title: 'Algorithm (演算法)' },
+  { year: '2023', term: 'fall', title: 'Graph Theory (圖論)' },
+  { year: '2023', term: 'spring', title: 'Algorithm (演算法)' },
+  { year: '2020', term: 'spring', title: 'Algorithm (演算法)' },
+  { year: '2019', term: 'spring', title: 'Algorithm (演算法)' },
+  { year: '2018', term: 'spring', title: 'Algorithm (演算法)' },
+  { year: '2017', term: 'spring', title: 'Algorithm (演算法)' },
+  { year: '2016', term: 'fall', title: 'Algorithm (演算法)' },
+  { year: '2015', term: 'fall', title: 'Algorithm (演算法)' },
+  { year: '2014', term: 'fall', title: 'Algorithm (演算法)' },
+  { year: '2013', term: 'fall', title: 'Algorithm (演算法)' },
+  { year: '2012', term: 'fall', title: 'Algorithm (演算法)' },
+  { year: '2010', term: 'fall', title: 'Algorithm (演算法)' },
+  { year: '2009', term: 'fall', title: 'Algorithm (演算法)' },
+];
 
 const CoursesPage = () => {
-  const [studentID, setStudentID] = useState('');
-  const [password, setPassword] = useState('');
-  const [error, setError] = useState('');
-  const [loggedIn, setLoggedIn] = useState(false);
-
-  const handleLogin = async () => {
-    try {
-      const response = await fetch('/ID.txt');
-      const text = await response.text();
-      const lines = text.split('\n');
-      const isValid = lines.some(line => {
-        const [id, pw] = line.trim().split(',');
-        return id === studentID && pw === password;
-      });
-      if (isValid) {
-        setLoggedIn(true);
-        setError('');
-      } else {
-        setError('Invalid ID or Password');
-      }
-    } catch (err) {
-      setError('Failed to read ID.txt');
-    }
-  };
-
-  if (loggedIn) {
-    return (
-      <div className="courses-page">
-        <h1>Welcome to Courses Page</h1>
-        <p>This is the content available after login.</p>
-      </div>
-    );
-  }
+  useEffect(() => {
+    document.title = 'Courses - INHPC';
+  }, []);
 
   return (
-    <div className="courses-page">
-      <h1>Courses</h1>
-      <p>To access the courses page, please input your student ID.</p>
-      <input
-        type="text"
-        placeholder="student ID"
-        value={studentID}
-        onChange={(e) => setStudentID(e.target.value)}
-      />
-      <input
-        type="password"
-        placeholder="password"
-        value={password}
-        onChange={(e) => setPassword(e.target.value)}
-      />
-      <button onClick={handleLogin}>Login</button>
-      {error && <p className="error">{error}</p>}
-      <p>If you have any question, please email to <a href="mailto:algoalgogo@gmail.com">algoalgogo@gmail.com</a></p>
+    <div className="courses-container" style={{ padding: '50px', background: '#f0f0f0' }}>
+      <h1 style={{ color: '#0391e0' }}>Courses</h1>
+      <ul style={{ lineHeight: '2em', paddingLeft: '20px' }}>
+        {courseList.map((course, index) => (
+          <li key={index}>
+            <a href="#" style={{ color: '#0391e0' }}>
+              {`${course.year} ${course.term} ${course.title}`}
+            </a>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -8,6 +8,7 @@ import Publications from './pages/Publications';
 import Members from './pages/Members';
 import './App.css';
 import Courses from './pages/Courses';
+import CoursesPage from './pages/courses-page'; // 成功畫面
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route path="/publications" element={<Publications />} />
           <Route path="/members" element={<Members />} />
           <Route path="/courses" element={<Courses />} />
+          <Route path="/courses-page" element={<CoursesPage />} />
         </Routes>
       </main>
       <Footer />
