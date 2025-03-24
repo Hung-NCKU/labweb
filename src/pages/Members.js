@@ -2,26 +2,26 @@ import React, { useEffect } from 'react';
 
 const membersData = {
   phd: [
-    { name: '陳郁涵', year: '112碩', img: 'assets/members/112_P78101035.jpg' },
-    { name: '張志嘉', year: '114碩', img: 'assets/members/default.jpg' }
+    { name: '陳郁涵', year: '112碩', img: 'assets/img/1.webp' },
+    { name: '張志嘉', year: '114碩', img: 'assets/img/2.webp' }
   ],
   master: [
-    { name: '林紹謙', year: '112碩', img: 'assets/members/default.jpg' },
-    { name: '張雅雯', year: '114碩', img: 'assets/members/114_P76121055.jpg' },
-    { name: '周智涵', year: '114碩', img: 'assets/members/114_P76121241.jpg' },
-    { name: '常博愛', year: '114碩', img: 'assets/members/114_P76123049.jpg' },
-    { name: '洪至謙', year: '114碩', img: 'assets/members/114_VX6122069.jpg' },
-    { name: '鄭以新', year: '114碩', img: 'assets/members/114_P76121283.jpg' },
-    { name: '陳英轍', year: '114碩', img: 'assets/members/114_Q56121036.jpg' },
-    { name: '何瀚宇', year: '114碩', img: 'assets/members/114_NE6127014.jpg' },
-    { name: '呂文翔', year: '115碩', img: 'assets/members/115_Q56131015.jpg' },
-    { name: '陳珮婕', year: '115碩', img: 'assets/members/115_P76134414.jpg' },
-    { name: '黃詠筑', year: '115碩', img: 'assets/members/115_VX6132056.jpg' },
-    { name: '巫冠君', year: '115碩', img: 'assets/members/115_NE6131063.jpg' },
-    { name: '劉威佑', year: '115碩', img: 'assets/members/115_P76134024.jpg' },
-    { name: '黃育笙', year: '115碩', img: 'assets/members/115_P76134553.jpg' },
-    { name: '鄧蓉', year: '115碩', img: 'assets/members/115_P76131521.jpg' },
-    { name: '鮑彥志', year: '115碩', img: 'assets/members/115_P76135012.jpg' }
+    { name: '林紹謙', year: '112碩', img: 'assets/img/3.webp' },
+    { name: '張雅雯', year: '114碩', img: 'assets/img/4.webp' },
+    { name: '周智涵', year: '114碩', img: 'assets/img/5.webp' },
+    { name: '常博愛', year: '114碩', img: 'assets/img/6.webp' },
+    { name: '洪至謙', year: '114碩', img: 'assets/img/7.webp' },
+    { name: '鄭以新', year: '114碩', img: 'assets/img/8.webp' },
+    { name: '陳英轍', year: '114碩', img: 'assets/img/9.webp' },
+    { name: '何瀚宇', year: '114碩', img: 'assets/img/10.webp' },
+    { name: '呂文翔', year: '115碩', img: 'assets/img/11.webp' },
+    { name: '陳珮婕', year: '115碩', img: 'assets/img/12.webp' },
+    { name: '黃詠筑', year: '115碩', img: 'assets/img/13.webp' },
+    { name: '巫冠君', year: '115碩', img: 'assets/img/14.webp' },
+    { name: '劉威佑', year: '115碩', img: 'assets/img/15.webp' },
+    { name: '黃育笙', year: '115碩', img: 'assets/img/16.webp' },
+    { name: '鄧蓉', year: '115碩', img: 'assets/img/17.webp' },
+    { name: '鮑彥志', year: '115碩', img: 'assets/img/18.webp' }
   ]
 };
 
