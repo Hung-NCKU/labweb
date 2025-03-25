@@ -56,26 +56,7 @@
     border-radius: 10px;  /* 可選，圓角 */
     margin-top: 20px;  
   }
-  
-  .footer {
-    background-color: #343434;
-    color: white;
-    padding: 30px 20px;
-    margin-top: 50px;
-    text-align: center;
-  }
-  
-  .footer-columns {
-    display: flex;
-    justify-content: center;
-    gap: 50px;
-    flex-wrap: wrap;
-  }
-  
-  .footer-bottom {
-    margin-top: 20px;
-  }
-  
+
   body {
     margin: 0;
     padding: 0;
@@ -84,4 +65,92 @@
   .highlight {
     color: #0391e0;  /* 或其他藍色，例如 #0b476f */
     font-weight: bold;
+  }
+
+  .timeline-center {
+    width: 80vw;
+    max-width: 40rem;
+  }
+  
+  .timeline-item {
+    border-top: 2px dashed var(--clr-primary-5);
+    margin: 0;
+    padding: 4rem 2rem;
+    position: relative;
+  }
+  
+  .timeline-item:nth-child(even) {
+    border-left: 2px dashed var(--clr-primary-5);
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+    margin-right: 2rem;
+    padding-right: 0;
+  }
+  
+  .timeline-item:nth-child(even) .number {
+    left: 0;
+  }
+  
+  .timeline-item:nth-child(odd) {
+    border-right: 2px dashed var(--clr-primary-5);
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    margin-left: 2rem;
+    padding-left: 0;
+  }
+  
+  .timeline-item:nth-child(odd) .number {
+    right: 0;
+    transform: translate(50%, -50%);
+  }
+  
+  .timeline-item:first-child {
+    border-top: 0;
+    border-top-right-radius: 0;
+  }
+  
+  .timeline-item:last-child {
+    border-bottom-left-radius: 0;
+  }
+  
+  .timeline-item p {
+    margin-bottom: 0;
+  }
+  
+  .timeline-item .number {
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    margin-bottom: 0;
+    background: var(--clr-primary-5);
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    color: var(--clr-primary-1);
+    font-weight: bold;
+  }
+  .section-title{
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .section-center {
+    width: 90vw;
+    margin: 0 auto;
+    max-width: 1170px;
+  }
+  .underline {
+    width: 5rem;
+    height: 0.25rem;
+    background-color: var(--clr-primary-5);
+    margin: 0 auto;
+    margin-bottom: 1.25rem;
+  }
+    
+  .img-place{
+    margin-bottom: 4rem;
+
+    text-align: center;
+    margin-right: 60rem; 
   }

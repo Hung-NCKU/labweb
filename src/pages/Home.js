@@ -24,12 +24,7 @@ const Home = () => {
   
     return (
       <div className="home">
-        <img src="/assets/img/cover.png" alt="Cover" style={{
-    display: 'block',
-    margin: '0 auto',
-    maxWidth: '100%',
-    height: 'auto',
-  }} />
+
     <div className="announcement"></div>
         <h1>實驗室公告</h1>
         {news.map((item, index) => (
